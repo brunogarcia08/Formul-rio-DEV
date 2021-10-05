@@ -1,0 +1,174 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100vh !important;
+}
+
+body {
+    background-color: rgb(85, 85, 197);
+    font-family: Arial;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: white;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+h1,
+p {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+input,
+button,
+select,
+textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+
+button {
+    border: none;
+}
+
+.container {
+    width: 100%;
+    margin: 3rem auto 1rem auto;
+}
+
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+header {
+    padding: 0 0.6rem;
+    margin-bottom: 1.8rem;
+}
+
+.descricao {
+    font-style: italic;
+    font-weight: 200;
+    text-shadow: 1 px 1 px 1px rgba(0, 0, 0, 0.4);
+}
+
+.text-center {
+    text-align: center;
+}
+
+form {
+    background: rgb(24, 24, 187);
+    padding: 2.5rem 0.6rem;
+    border-radius: 0.5rem;
+}
+
+@media (min-width: 480px) {
+    form {
+        padding: 2.5rem;
+    }
+}
+
+.form_group {
+    margin: 0 auto 1.2rem auto;
+    padding: 0.3rem;
+}
+
+.form_control {
+    display: block;
+    width: 100%;
+    height: 2.4rem;
+    padding: 0.3rem 0.7rem;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.3rem;
+    transition: 0.15s ease-in-out;
+}
+
+.form_control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.input-radio,
+.input-checkbox {
+    display: inline-block;
+    margin-right: 0.6rem;
+    min-height: 1.2rem;
+    min-width: 1.2rem;
+}
+
+.input-textarea {
+    min-height: 120px;
+    width: 100%;
+    padding: 0.6rem;
+    resize: none;
+}
+
+.submit-button {
+    display: block;
+    width: 100%;
+    padding: 0.7rem;
+    background-color: rgb(14, 194, 29);
+    color: inherit;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+#fundo_tela{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -8;
+}
+
+.tamanhoPagina {
+    height: 100%;
+}
+
+.scrollbutton {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid #fff;    
+    background-color: rgb(24, 24, 187);
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 10;
+    cursor: pointer;    
+}

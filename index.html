@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário de Pesquisa</title>
+</head>
+<body>
+    <image src="image/image_dev.jpeg" alt="Fundo de tela" id="fundo_tela"/>
+
+<div class="container">
+    <header class="header">
+        <h1 id="titulo" class="text-center">Formulário de Pesquisa DEV</h1>
+        <p id="descricao" class="descricao text-center">Obrigado por nos ajudar a melhorar a plataforma.</p>
+    </header>
+    <form id="formulario">
+        <div class="form_group">
+            <label id="name-label" for="name">Nome</label>
+            <input type="text" name="name" id="name" class="form_control" placeholder="Digite seu nome" required>
+        </div>
+        <div class="form_group">
+            <label id="email-label" for="email">E-mail</label>
+            <input type="email" name="email" id="email" class="form_control" placeholder="Digite seu e-mail" required>
+        </div>
+        <div class="form_group">
+            <label id="number-label" for="number">Idade</label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form_control" placeholder="Digite sua idade">
+        </div>
+        <div class="form_group">
+            <p>Qual a melhor opção que descreve sua função atual?</p>
+            <select name="role" id="dropdown" class="form_control" required>
+                <option disabled selected value>Selecione a função atual</option>
+                <option value="student">Estudante</option>
+                <option value="job">Trabalho em tempo integral</option>
+                <option value="learner">Aprendiz em tempo integral</option>
+                <option value="preferNo">Prefiro não dizer</option>
+                <option value="other">Outra</option>
+            </select>
+        </div>
+        <div class="form_group">
+            <p>Você recomendaria nossa pesquisa a um amigo?</p>
+            <label>
+                <input name="user-recommend" value="comCerteza" type="radio" class="input-radio" checked>
+                Com certeza
+            </label>
+            <label>
+                <input name="user-recommend" value="podeSer" type="radio" class="input-radio" checked>
+                Pode ser
+            </label>
+            <label>
+                <input name="user-recommend" value="naoTenhoCerteza" type="radio" class="input-radio" checked>
+                Não tenho certeza
+            </label>
+        </div>
+        <div class="form_group">
+            <p>Qual o seu recurso favorito nas plataformas de aprendizado?</p>
+            <select name="mostlike" id="mos-like" class="form_control" required>
+                <option disabled selected value>Selecione a opção</option>
+                <option value="challenges">Desafios</option>
+                <option value="projects">Projetos</option>
+                <option value="community">Comunidade</option>
+                <option value="openSource">Código Aberto</option>
+            </select>
+        </div>
+        <div class="form_group">
+            <p>O que você gostaria que melhorasse nas plataformas?</p>
+            <label>
+                <input name="prefer" value="front-end-projects" type="checkbox" class="input-checkbox">
+                Projetos de Front-end 
+            </label>
+            <label>
+                <input name="prefer" value="back-end-projects" type="checkbox" class="input-checkbox">
+                Projetos de Back-end 
+            </label>
+            <label>
+                <input name="prefer" value="data-visualization" type="checkbox" class="input-checkbox">
+                Visualização de Dados
+            </label>
+            <label>
+                <input name="prefer" value="challenges" type="checkbox" class="input-checkbox">
+                Desafios
+            </label>
+            <label>
+                <input name="prefer" value="open-source-community" type="checkbox" class="input-checkbox">
+                Comunidade de Código Aberto
+            </label>
+            <label>
+                <input name="prefer" value="help-rooms" type="checkbox" class="input-checkbox">
+                Salas de Ajuda
+            </label>
+            <label>
+                <input name="prefer" value="videos" type="checkbox" class="input-checkbox">
+                Vídeos
+            </label>
+            <label>
+                <input name="prefer" value="meetups" type="checkbox" class="input-checkbox">
+                Encontros
+            </label>
+            <label>
+                <input name="prefer" value="forum" type="checkbox" class="input-checkbox">
+                Fórum
+            </label>
+            <label>
+                <input name="prefer" value="additional-courses" type="checkbox" class="input-checkbox">
+                Cursos Adcionais
+            </label>
+        </div>
+        <div class="form_group">
+            <p>Algum comentário ou sugestão?</p>
+            <textarea name="comment" id="comments" class="input-textarea" placeholder="Coloque aqui seu comentário"></textarea>
+        </div>
+        <div class="form_group">
+            <button type="submit" id="submit" class="submit-button">Enviar</button>
+        </div>
+    </form>
+</div>
+<div class="tamanhoPagina"></div>
+<div onclick="subirTela()" class="scrollbutton"></div>
+
+<script src="script.js"></script>    
+</body>
+</html>
